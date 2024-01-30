@@ -406,14 +406,14 @@ h6 {
 #hero {
   width: 100%;
   min-height: 100vh;
-  background: url("../img/coding-desktop-img.webp") top center;
+  background: url("../img/portfolio-imgs/desktop-wallpaper-software-web-development.jpg") top center;
   background-size: cover;
   position: relative;
 }
 
 #hero:before {
   content: "";
-  background: rgba(53, 53, 53, 0.5);
+  background: rgba(53, 53, 53, 0.6);
   position: absolute;
   bottom: 0;
   top: 0;
