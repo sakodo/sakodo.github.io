@@ -33,7 +33,30 @@
 </head>
 
 <body>
-
+  <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-lg-between">
@@ -42,19 +65,31 @@
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       <!-- debut de la nav -->
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto" href="#about">A propos</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contactez-moi</a></li>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </ul>
+      <nav class="navbar navbar-expand-lg order-lg-0">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link scrollto" aria-current="page" href="#about">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto " href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#contact">Contactez-moi</a>
+            </li>
+          </ul>
+        </div>
       </nav><!-- .navbar -->
 
     </div>
+
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
+  
   <section id="hero" class="d-flex align-items-center justify-content-center">
     <div class="container" data-aos="fade-up">
 
@@ -66,7 +101,9 @@
       </div>
 
     </div>
-  </section><!-- End Hero -->
+  </section>
+  
+  <!-- ======== End Hero ======== -->
 
   <main id="main">
 
@@ -76,27 +113,17 @@
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio-imgs/desktop-wallpaper-software-web-development.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
             <h3>A propos</h3>
             <p class="fst-italic">
-              Après avoir exploré l'entrepreneuriat dans le secteur de la restauration et acquis une solide expérience en gestion chez Orange, 
-              ainsi qu'en comptabilité et en gestion de la paie, j'ai délibérément décidé de me réorienter professionnellement. Convaincu de l'importance de l'innovation technologique, 
-              j'ai entrepris un parcours d'auto-apprentissage pour maîtriser les bases des langages de programmation tels que Python et Swift. Cependant, à mesure de mes progrès, 
-              ma passion pour le développement web s'est intensifiée, ce qui m'a poussé à me spécialiser davantage dans ce domaine.
-            </p>
-            <p class="fst-italic">
-              J'ai donc choisi de suivre une formation Fullstack à distance avec Study, 
-              où j'ai pu acquérir des compétences en HTML, CSS, Bootstrap et JavaScript. 
-              Simultanément, je me suis lancé dans une formation spécialisée en développement back-end en PHP à la passerelle à Rosa Park sur Paris, 
-              où j'ai appris à manipuler des bases de données et à valider mes acquis. 
-              Ces démarches visent à renforcer mes compétences en développement web et à me préparer efficacement ma transition professionnelle.
-            </p>
-            <p class="fst-italic">
-            Cette décision découle de mon désir profond de jouer un rôle actif dans la création de solutions numériques solides et efficaces. 
-            En tant que personne avide d'apprendre de nouvelles compétences, je cherche à rester constamment à jour de manière autonome tout en favorisant un esprit d'équipe. 
-            Je suis motivé à intégrer une équipe qui me permettra de m'épanouir en tant que développeur et de contribuer de manière significative aux projets technologiques.
+              Après avoir accumulé plusieurs expériences dans l'entrepreneuriat dans le secteur de la restauration, ainsi que dans le management chez Orange, 
+              j'ai pris la décision de me reconvertir dans un domaine qui a toujours suscité mon intérêt. 
+              J'ai donc entrepris d'apprendre les bases de la programmation en autodidacte avec Python.
+              Par la suite, j'ai choisi de suivre des cours à distance pour devenir développeur Full Stack chez Studi. En parallèle, 
+              j'ai renforcé mes compétences en présentiel à la passerelle en backend avec PHP et SQL.
+              Je suis désormais prêt à mettre à profit cette expertise dans un environnement stimulant et innovant.
             </p>
             
           </div>
@@ -757,8 +784,10 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
+  <script type="module">
+    import datGui from 'https://cdn.skypack.dev/dat.gui';
+  </script>
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
