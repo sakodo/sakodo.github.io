@@ -1008,7 +1008,9 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
-
+.portfolio-details .featurette{
+  margin-top: 100px;
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
