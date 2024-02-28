@@ -1011,6 +1011,11 @@ section {
 .portfolio-details .featurette{
   margin-top: 100px;
 }
+.sombre {
+  background-color: #343a40; /* Couleur sombre */
+  color: #fff; /* Texte en blanc */
+  padding: 50px;
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
